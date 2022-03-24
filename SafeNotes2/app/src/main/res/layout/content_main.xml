@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.SSI.SafeNotes.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@color/colorPrimary">
+
+    <Button
+        android:id="@+id/Login"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reEnterPasswordValueID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@android:drawable/btn_default"
+        android:text="  Login  "
+        />
+
+
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_above="@+id/passwordValueID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/passwordValueID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:maxLines="20" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/reEnterPasswordValueID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordValueID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="retype password"
+        android:visibility="gone"
+        android:inputType="textPassword"
+        android:maxLines="20" >
+    </EditText>
+
+
+</RelativeLayout>
